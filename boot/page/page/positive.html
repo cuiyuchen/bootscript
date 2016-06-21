@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position</title>
+	<script src="../js/jquery-1.11.0.js"></script>
+	<style>
+	.box{position:relative;height: 500px;width:500px;background:#ff0;padding: 30px}
+	.aaa{position: relative;height: 200px;width: 200px;background: #f00;margin-left: 100px;top:0;left: 0;}
+	.bbb{position:relative;height: 150px;width:150px;background: #0ff;margin-top:100px;}
+	.ddd{position: absolute;height: 100px;width:100px;background: #f0f;top:0;left: 0;}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="aaa">
+			<div class="bbb">
+				<div class="ccc">
+					<div class="ddd">
+						<span>nihao</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$("ul li").click(function(){
+		alert($(this).index())
+	})
+</script>
+</html>

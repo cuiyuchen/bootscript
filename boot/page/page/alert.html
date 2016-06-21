@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>boot1</title>
+	<link rel="stylesheet" href="../js/bootstrap.min.css">
+	<script src="../js/jquery-1.11.0.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="alert alert-warning fade in">
+ 		<a href="###" class="close" data-dismiss="alert">
+			&times
+ 		</a>
+ 		<strong>请输入数字字母下划线</strong>
+	</div>
+	<div id="myAlert" class="alert alert-success">
+		<a href="###" class="close">
+			&times
+		</a>
+		<strong>
+			成功
+		</strong>
+	</div>
+	<div class="btn btn-warning data-toggle=popover" title="kobe" data-content="jjfjijjgeiogjdlkjgiejrgioejrgijldkjgoi" data-placement="top">
+		点击
+	</div>
+
+	<script>
+		$(function(){
+			$(".close").click(function(){
+				$("#myAlert").alert("close");				
+			})
+    		$(".btn").popover();
+		})
+	</script>
+</body>
+</html>
