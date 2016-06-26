@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>offset</title>
+	<script src="../js/jquery.min.js"></script>
+	<style>
+	*{margin:0;padding:0;}
+	body,html{height: 100%}
+	#box{width:300px;height:300px;border:1px solid #ccc;margin-left: 100px;margin-top:50px;}
+	#odiv{height:50px;width:50px;background: #0f0;position: relative;top:50px;left:50px;}
+	#bg{height: 100px;width:100px;position: absolute;background: #ff0;top:70px;left:80px;}
+	#position{height: 50px;width:50px;background: #f00;margin-top:30px;margin-left: 30px;}
+	</style>
+</head>
+<body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div id="box"><div id="position"></div></div>
+	<div id="odiv"></div>
+	<div id="bg"></div>
+	
+	<script>
+	// var off=$("#box").offset();
+	// alert(off.top);
+	// alert(off.left);
+	// var off2=$("#odiv").offset();
+	// alert(off2.top)
+	// alert(off2.left)
+	// var off3=$("#bg").offset();
+	// alert(off3.top)
+	// alert(off3.left)
+
+	// var off=$("#position").offset();
+	// alert(off.top);
+	// alert(off.left);
+	var off=$("#position").position();
+	alert("windowsrcoll"+$(window).scrollTop())//获取滚动条的高度  
+	alert("documentscroll"+$(document).scrollTop())
+	alert("documentheight"+$(document).height())
+	alert("windowHeight"+$(window).height())
+	// alert(off.top);
+	// alert(off.left);
+	</script>
+</body>
+</html>
