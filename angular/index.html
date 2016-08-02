@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='nav'>
+<head>
+	<meta charset="UTF-8">
+	<title>directive</title>
+	<script src='js/angular.js'></script>
+</head>
+<body>
+	<div id="box">
+		<navbar></navbar>
+	</div>
+</body>
+<script>
+	angular.module('nav',[]).directive('navbar',function(){
+		return{
+			restrict:'E',
+			template:"<div ng-click='aa()''>{{tt}}</div>",
+			controller:function($scope){
+				$scope.tt="1111111111111";
+				$scope.aa=function(){
+					alert($scope.tt)
+				}
+			}
+		}
+	})
+</script>
+</html>
